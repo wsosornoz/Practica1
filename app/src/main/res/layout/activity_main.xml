@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/lavender">
+
+
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvTitulo"
+            android:text="@string/formulario"
+            android:textSize="30sp"
+            android:gravity="center_horizontal"
+            android:textStyle="bold"
+            android:textColor="@color/purple"
+            android:textAllCaps="true"
+            android:layout_marginTop="10dp"/>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="25dp">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nombre"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="@color/darkred"/>
+
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/etNombre"
+                android:layout_marginStart="20dp"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/password"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="@color/darkred"/>
+
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/etPassword"
+                android:inputType="textPassword"
+                android:layout_marginStart="20dp"/>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/valpassword"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="@color/darkred"/>
+
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/etValpassword"
+                android:inputType="textPassword"
+                android:layout_marginStart="20dp"/>
+
+
+    </LinearLayout>
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Correo electrónico"
+            android:textColor="@color/darkgoldenrod"/>
+
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etCorreo"
+            android:inputType="textEmailAddress"
+            android:hint="Correo electrónico"/>
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Género"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/darkgoldenrod"/>
+
+
+
+    </LinearLayout>
+
+
+    <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+        <RadioButton android:id="@+id/rbMasculino"
+                     android:layout_width="0dp"
+                     android:layout_height="wrap_content"
+                     android:layout_weight="1"
+                     android:text="@string/masculino"
+                     android:textStyle="bold"
+                     android:textColor="@color/darkred"
+                     android:onClick="onRadioButtonClicked"
+                     android:checked="true"/>
+
+        <RadioButton android:id="@+id/rbFemenino"
+                     android:layout_width="0dp"
+                     android:layout_height="wrap_content"
+                     android:layout_weight="1"
+                     android:text="@string/Femenino"
+                     android:textStyle="bold"
+                     android:textColor="@color/darkred"
+                     android:onClick="onRadioButtonClicked"/>
+    </RadioGroup>
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <TextView android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:text="Hobbies"
+                  android:textColor="@color/darkgoldenrod"
+                  android:layout_marginTop="20dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+    <CheckBox
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/cbCine"
+            android:text="Cine"
+            android:textStyle="bold"
+            android:textColor="@color/darkred"
+            android:onClick="onCheckBoxClicked"/>
+
+    <CheckBox
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/cbNadar"
+            android:text="Nadar"
+            android:textStyle="bold"
+            android:textColor="@color/darkred"
+            android:onClick="onCheckBoxClicked"/>
+
+    <CheckBox
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/cbLeer"
+            android:text="Leer"
+            android:textStyle="bold"
+            android:textColor="@color/darkred"
+            android:onClick="onCheckBoxClicked"/>
+
+    <CheckBox
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/cbSeries"
+            android:text="Series"
+            android:textStyle="bold"
+            android:textColor="@color/darkred"
+            android:onClick="onCheckBoxClicked"/>
+
+        <CheckBox
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/cbOtro"
+            android:text="@string/otros"
+            android:textStyle="bold"
+            android:textColor="@color/darkred"
+            android:onClick="onCheckBoxClicked"/>
+
+
+</LinearLayout>
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvDate"
+            android:layout_marginTop="20dp"
+            android:text="Fecha de nacimiento"
+            android:textColor="@color/darkgoldenrod"/>
+
+
+    <EditText
+            android:hint="Fecha de Nacimiento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/bFechaNac"
+            android:textAllCaps="false"
+            android:onClick="showTimePickerDialog"
+            android:focusable="false"/>
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvCiudad"
+            android:layout_marginTop="20dp"
+            android:text="@string/ciudad"
+            android:textColor="@color/darkgoldenrod"/>
+
+    <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/spCiudad"
+            android:entries="@array/city_list"
+            android:background="@color/lightgray"/>
+
+    <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/guardar"
+            android:textStyle="bold"
+            android:id="@+id/bnGuardar"
+            android:textAllCaps="false"
+            android:textSize="20dp"
+            android:textColor="@color/purple"
+            android:background="@color/goldenrod"
+            android:layout_marginTop="20dp"/>
+
+    <TextView
+            android:text=""
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvResultado"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@android:color/holo_red_dark"
+            android:layout_marginTop="20dp"/>
+
+
+    </LinearLayout>
+
+</ScrollView>

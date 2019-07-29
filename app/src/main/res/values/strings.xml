@@ -1,0 +1,29 @@
+
+<resources>
+    <string name="app_name">Formulario</string>
+
+    <string name="formulario">Formulario</string>
+    <string name="nombre">Nombre</string>
+    <string name="correo">Correo electronico</string>
+    <string name="cedula">Numero de documento</string>
+    <string name="password">Password</string>
+    <string name="valpassword">Confirmar password</string>
+    <string name="guardar">Guardar</string>
+    <string name="masculino">Masculino</string>
+    <string name="Femenino">Femenino</string>
+    <string name="cine">cine</string>
+    <string name="nadar">nadar</string>
+    <string name="leer">leer</string>
+    <string name="series">series</string>
+    <string name="ciudad">Ciudad</string>
+    <string name="otros">Otros</string>
+
+
+    <string-array name="city_list">
+        <item>Bogotá</item>
+        <item>Cali</item>
+        <item>Medellín</item>
+        <item>Barranquilla</item>
+        <item>Pereira</item>
+    </string-array>
+</resources>
